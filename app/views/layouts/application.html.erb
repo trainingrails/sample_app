@@ -2,9 +2,13 @@
 <html>
   <head>
     <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+
     <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css', :media => "all" %>
   </head>
   <body>
+
+
     <%= yield %>
   </body>
 </html>
