@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+    <title><%= title %></title>
 
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag 'http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css', :media => "all" %>
+    <%= render 'layouts/stylesheets' %>
   </head>
+
   <body>
+  <%= render 'layouts/header' %>
+
+<br /><br /><br />
+
+<div class="container">
+
+
+ <section class="round">
 
 
     <%= yield %>
+    </section>
+    </div>
+  <%= render 'layouts/footer' %>
   </body>
 </html>
 
