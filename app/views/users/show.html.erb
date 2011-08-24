@@ -1,2 +1,12 @@
-<%= @user.name %>, <%= @user.email %>
+<h2><%= @user.name %></h2>
+<br />
+ <%= @user.email %>
+<br /><br />
+
+ <b>Name</b> <%= @user.name %> <br />
+ <b>url</b> <%= link_to user_path(@user), @user %>
+
+
+
+ </div>
 
